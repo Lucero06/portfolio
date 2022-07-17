@@ -1,0 +1,125 @@
+body{
+    font-family: 'Courier New', monospace;
+    font-family: Helvetica, sans-serif;     
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: inherit;
+}
+
+a:hover{
+    color: #3e3e3e;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+body::-webkit-scrollbar-track {
+    background:  linear-gradient(0deg, darkslategrey 0%, darkcyan 100%);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 0px 0px 0px 100000vh black;
+}
+
+nav{
+    font-size: 1.2em;
+    box-shadow: 0px 0px 5px 0px black;
+    position: fixed;
+    width: 100%;
+}
+
+body, nav, footer{
+    margin: 0;
+}
+
+nav ul{
+    text-align: center;
+}
+
+nav ul, footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+footer{
+    font-size: .7em;
+}
+footer li{
+    padding: 2px;
+}
+
+nav ul li, footer ul li {
+    display: inline-block;
+}
+
+article{
+    min-height: 89vh;
+}
+
+.vertical-ul li{
+    display: block;
+}
+.vertical-ul{
+    display: inline-block;
+}
+
+nav{
+    background-color:darkcyan;
+    height: 34px;
+}
+
+nav ul, nav div{
+    height: 100%;   
+}
+nav li a{
+    vertical-align: sub;
+}
+
+footer{
+    background-color: darkslategrey;
+}
+
+footer div{
+    padding: 10px;
+    color: white;
+}
+
+.padd-l{
+    padding: 0 0 0 10px;
+}
+
+.form{
+    width: 80%;
+    display: grid;
+    grid-template-columns: .25fr .5fr;
+    row-gap: 20px;
+}
+.form label{
+    text-align: right;
+    padding-right: 10px;
+}
+.form input{
+    border-radius: 9px;
+    border-width: 1px;
+    height: 2em;
+    border-style: solid;
+    padding: 2px;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+

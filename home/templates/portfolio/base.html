@@ -1,0 +1,28 @@
+
+
+<html lang="es">
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <nav>
+        {% include "navbar.html" %}
+    </nav>
+
+    <article>
+        {% block content %}{% endblock %}
+    </article>
+    
+    <footer>
+        {% include "footer.html" %}
+    </footer>
+</body>
+
+
+</html>

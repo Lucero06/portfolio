@@ -1,0 +1,49 @@
+{% extends 'portfolio/base.html' %}
+
+
+
+{% block content %}
+
+<input type="hidden" id="status" value={{status}}> </input>
+<center>
+<h2> Contacto </h2> </center>
+{% if status == 'success'%}
+    
+    <span>
+        Correo enviado correctamente
+    </span>
+{% endif %}
+<div class="info">
+    <span></span>
+<span>    <p><i class="fa-solid fa-id-card-clip"></i>
+    Lucero Monserrat Sánchez Pavón </p>
+
+    <p><i class="fa-solid fa-earth-americas"></i> Orizaba, Ver. México</p>
+    
+     <p>
+        <i class="fa-solid fa-mobile-screen"></i> {{number}}
+    </p> 
+
+    
+    <p><i class="fa-regular fa-envelope"></i> {{mail}}</p></span>
+    <span></span>
+</div>
+
+<center>
+    <h3> Envía un correo </h3>
+</center>
+<div>
+    <form action="/contacto" method="post">
+        {% csrf_token %}
+        <center>
+            <div class="form">
+                {{form}}
+            <span></span> <input type="submit" value="Enviar">
+            </div>        
+        </center>
+    </form>
+</div>
+
+
+{% endblock %}
+
