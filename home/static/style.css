@@ -65,7 +65,7 @@ nav ul li, footer ul li {
 }
 
 article{
-    min-height: 89vh;
+    min-height: 91.8vh;
 }
 
 .vertical-ul li{
@@ -123,3 +123,9 @@ footer div{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+
+#icv{
+    display: block;
+    width: 100%;
+    height: 100%;
+}

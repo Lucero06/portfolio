@@ -13,6 +13,12 @@ class HomeView(View):
         template_name='portfolio/base.html'
         return render(request, template_name)
 
+class CvView(View):
+    def get(self,request):
+        template_name='cv.html'
+        return render(request, template_name)
+
+
 class ContactView(HomeView):
     form_class=MailForm
     template_name='contact.html'
