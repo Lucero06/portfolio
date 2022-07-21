@@ -33,7 +33,16 @@ class ContactView(HomeView):
         if form.is_valid():
             print(form.cleaned_data)
             data = form.cleaned_data
-            
+            send_mail(
+                'Portfolio message',
+                'Nombre: '+data['name']+'\n'
+                +'Celular: '+data['cellphone_number']+'\n'
+                +'Tel.Fijo: '+data['phone_number']+'\n\n'
+                +'Mensaje:\n'+data['body'],
+                config('EMAIL_HOST_USER'),
+                [config('SEND_EMAIL')],
+                fail_silently=False,
+            )
             form=self.form_class()
             return render(request, self.template_name, {'form': form, 'status':'success','number':config('CEL_NUMBER'), 'mail':config('EMAIL')})
             
