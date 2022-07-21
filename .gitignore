@@ -1,6 +1,5 @@
 .git/
 __pycache__
-static/*
 .env
 db.sqlite3
 
