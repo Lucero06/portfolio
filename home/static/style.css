@@ -139,3 +139,14 @@ footer div{
     color: orangered;
     font-weight: bold;
 }
+
+.grid-preview img{
+    width: 80%;
+    margin-bottom: 10px;
+    border: darkcyan;
+    border-width: 1px;
+    border-style: solid;
+}
+.grid-preview{
+    text-align: center;
+}

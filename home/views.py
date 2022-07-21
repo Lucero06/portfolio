@@ -19,6 +19,10 @@ class CvView(View):
         template_name='cv.html'
         return render(request, template_name)
 
+class PreviewView(View):
+    def get(self, request):
+        template_name='previews.html'
+        return render(request, template_name)
 
 class ContactView(HomeView):
     form_class=MailForm
