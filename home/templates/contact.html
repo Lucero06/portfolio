@@ -4,14 +4,28 @@
 
 {% block content %}
 
+<script>
+    if (window.history.replaceState) { // verificamos disponibilidad
+        window.history.replaceState(null, null, window.location.href);
+    }
+</script>
+
 <input type="hidden" id="status" value={{status}}> </input>
 <center>
 <h2> Contacto </h2> </center>
 {% if status == 'success'%}
-    
+<center id="msj_sent_mail">
     <span>
         Correo enviado correctamente
     </span>
+</center>
+{% endif %}
+{% if status == 'fail'%}
+<center id="msj_sent_mail_fail">
+    <span>
+        Su correo no pudo ser enviado, inténtelo de nuevo.
+    </span>
+</center>
 {% endif %}
 <div class="info">
     <span></span>
