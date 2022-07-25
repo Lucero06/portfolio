@@ -14,10 +14,14 @@
     <nav>
         {% include "navbar.html" %}
     </nav>
-    <div style="height:35px"></div>
+    <div style="height:39px"></div>
 
     <article>
-        {% block content %}{% endblock %}
+        {% block content %}
+        <center class="icono">
+            <i class="fa-solid fa-person-digging"></i>
+        </center>
+        {% endblock %}
     </article>
     
     <footer>

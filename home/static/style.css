@@ -28,10 +28,11 @@ h1,h2,h3,h4,h5{
     font-weight: 500 !important;
     line-height: 1.2;
 }
-p{
-     
+.icono{
+    font-size: 3em;
+    top: 40vh;
+    position: relative;
 }
-
 nav li:hover{
     font-family: "Blaka"; 
     font-size: 1.3em;
@@ -63,7 +64,7 @@ body::-webkit-scrollbar-thumb {
     border-color: white;
     border-radius: 26px;
     background: transparent;
-    box-shadow: 0px 0px 0px 100000vh transparent;
+    box-shadow: 0px 5px 14px 3px black;
 }
 
 nav{
