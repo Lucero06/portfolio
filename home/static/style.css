@@ -50,7 +50,7 @@ a:hover{
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 15px;
   }
   
 body::-webkit-scrollbar-track {
@@ -61,7 +61,7 @@ body::-webkit-scrollbar-thumb {
     border-width: 1px;
     border-style: solid;
     border-color: white;
-    border-radius: 3px;
+    border-radius: 26px;
     background: transparent;
     box-shadow: 0px 0px 0px 100000vh transparent;
 }
