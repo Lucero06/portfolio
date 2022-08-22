@@ -1,29 +1,30 @@
-@font-face {
+font-face {
     font-family: 'Raleway';
     src: local('Raleway'),
     url('fonts/Raleway-VariableFont_wght.ttf') format("truetype");
   }
-@font-face {
-    font-family: 'RalewayD';
-    src: local('RalewayD'),
-    url('fonts/RalewayDots-Regular.ttf') format("truetype");
+  @font-face {
+    font-family: 'MedievalSharp';
+    src: local('MedievalSharp'),
+    url('fonts/MedievalSharp.ttf') format("truetype");
   }
-@font-face {
-    font-family: 'Blaka';
-    src: local('Blaka'),
-    url('fonts/Blaka-Regular.ttf') format("truetype");
+  @font-face {
+    font-family: 'Eater';
+    src: local('Eater'),
+    url('fonts/Eater.ttf') format("truetype");
   }
-@font-face {
-    font-family: 'BlakaH';
-    src: local('BlakaH'),
-    url('fonts/BlakaHollow-Regular.ttf') format("truetype");
-  }
-
+  
 body{
     font-family: 'Courier New', monospace;
     font-family: Helvetica, sans-serif;
-    font-family: "Raleway", sans-serif; 
+    font-family: "Raleway", sans-serif;   
 }
+
+nav{
+    font-family: "MedievalSharp";
+    
+}
+
 h1,h2,h3,h4,h5{
     font-weight: 500 !important;
     line-height: 1.2;
@@ -33,9 +34,10 @@ h1,h2,h3,h4,h5{
     top: 40vh;
     position: relative;
 }
-nav li:hover{
-    font-family: "Blaka"; 
-    font-size: 1.3em;
+nav li:hover, .active-nav{
+    
+    font-family: "Eater" !important;
+    color: black;
 }
 
 a{
@@ -44,10 +46,6 @@ a{
 
 a:link, a:visited{
     color: inherit;
-}
-
-a:hover{
-    color: #3e3e3e;
 }
 
 ::-webkit-scrollbar {
@@ -60,11 +58,14 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     border-width: 1px;
-    border-style: solid;
+    border-style:inset;
     border-color: white;
-    border-radius: 26px;
     background: transparent;
-    box-shadow: 0px 5px 14px 3px black;
+    box-shadow: 0px 6px 11px 4px #303030;
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, 0.247);
 }
 
 nav{
@@ -197,3 +198,4 @@ form .required::before{
 .grid-preview{
     text-align: center;
 }
+

@@ -1,16 +1,40 @@
 <div>
     <ul>
-        <li class="padd-l">
-            <a href="/">Inicio</a>
+        {% url 'home' as home_url %}
+        {% url 'preview' as preview_url %}
+        {% url 'contact' as contact_url %}
+        {% url 'cv' as cv_url %}
+        <li 
+            {% if  request.path  ==  home_url %}
+            class="padd-l active-nav"
+            {%else%}
+            class="padd-l" 
+            {%endif%} >
+            <a href="{% url 'home' %}">Inicio</a>
         </li>
-        <li class="padd-l">
-            <a href="/vistas">Portafolio</a>
+        <li 
+            {% if  request.path  ==  preview_url %}
+            class="padd-l active-nav"
+            {%else%}
+            class="padd-l" 
+            {%endif%}>
+            <a href="{% url 'preview' %}">Portafolio</a>
         </li>
-        <li class="padd-l">
-            <a href="/contacto">Contacto</a>
+        <li 
+            {% if  request.path  ==  contact_url %}
+            class="padd-l active-nav"
+            {%else%}
+            class="padd-l" 
+            {%endif%}>
+            <a href="{% url 'contact' %}">Contacto</a>
         </li>
-        <li class="padd-l">
-            <a href="/cv">C.V.</a>
+        <li 
+            {% if  request.path  ==  cv_url %}
+            class="padd-l active-nav"
+            {%else%}
+            class="padd-l" 
+            {%endif%}>
+            <a href="{% url 'cv' %}">C.V.</a>
         </li>
     </ul>
 </div>
