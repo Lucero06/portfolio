@@ -1,18 +1,18 @@
-font-face {
+@font-face {
     font-family: 'Raleway';
     src: local('Raleway'),
     url('fonts/Raleway-VariableFont_wght.ttf') format("truetype");
   }
-  @font-face {
+@font-face {
     font-family: 'MedievalSharp';
     src: local('MedievalSharp'),
     url('fonts/MedievalSharp.ttf') format("truetype");
-  }
-  @font-face {
+}
+@font-face {
     font-family: 'Eater';
     src: local('Eater'),
     url('fonts/Eater.ttf') format("truetype");
-  }
+}
   
 body{
     font-family: 'Courier New', monospace;
@@ -67,21 +67,28 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:active {
     background: rgba(0, 0, 0, 0.247);
 }
-
+nav, #nav-space{
+    width: 100%;
+    background-image: linear-gradient(90deg, black -5%, darkcyan 50%);
+}
 nav{
     font-size: 1.2em;
-    box-shadow: 0px 0px 5px 0px black;
-    position: fixed;
-    width: 100%;
-
-    background-color:darkcyan;
-    background-image: linear-gradient(90deg, rgb(32, 31, 31) 0%, darkcyan 50%);
-    
-    background-image: linear-gradient(90deg, black -5%, darkcyan 50%);
-    height: 34px;
+    position: sticky;
+    top: 0;
     color: white;
+    
+}
+#nav-space{
+    height: 20px;
+    display: block;
+}
+#nav-content{
+    box-shadow:  0px 12px 13px -11px black;
+    padding-bottom: 5px;
+}
 
-    padding: 5px;
+nav li a{
+    vertical-align: sub;
 }
 
 body, nav, footer{
@@ -121,12 +128,6 @@ article{
 }
 
 
-nav ul, nav div{
-    height: 100%;   
-}
-nav li a{
-    vertical-align: sub;
-}
 
 footer{
     background-color: darkslategrey;

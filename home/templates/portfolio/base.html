@@ -2,7 +2,8 @@
 
 <html lang="es">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<head>
+
+    <head>
     {% load static %}
 
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
@@ -11,11 +12,13 @@
 </head>
 
 <body>
-    
+    <div id="nav-space">
+
+    </div>
     <nav>
         {% include "navbar.html" %}
     </nav>
-    <div style="height:39px"></div>
+    <div style=""></div>
 
     <article>
         {% block content %}
