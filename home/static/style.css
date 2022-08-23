@@ -39,6 +39,9 @@ nav li:hover, .active-nav{
     font-family: "Eater" !important;
     color: black;
 }
+nav li:hover{
+    /* background-color: #30303040 !important; */
+}
 
 a{
     text-decoration: none;
@@ -53,7 +56,7 @@ a:link, a:visited{
   }
   
 body::-webkit-scrollbar-track {
-    background:  linear-gradient(0deg, darkslategrey 0%, darkcyan 100%);
+    background:  linear-gradient(0deg, #100e14 0%, #b56c21 100%);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -69,7 +72,7 @@ body::-webkit-scrollbar-thumb:active {
 }
 nav, #nav-space{
     width: 100%;
-    background-image: linear-gradient(90deg, black -5%, darkcyan 50%);
+    background-image: linear-gradient(90deg, black -5%, #b56c21 50%);
 }
 nav{
     font-size: 1.2em;
@@ -130,7 +133,7 @@ article{
 
 
 footer{
-    background-color: darkslategrey;
+    background-color: #100e14;
 }
 
 footer div{
