@@ -34,13 +34,13 @@ h1,h2,h3,h4,h5{
     top: 40vh;
     position: relative;
 }
+nav li{
+    transition: 0.5s;
+}
 nav li:hover, .active-nav{
     
     font-family: "Eater" !important;
     color: black;
-}
-nav li:hover{
-    /* background-color: #30303040 !important; */
 }
 
 a{
@@ -125,6 +125,7 @@ article{
 
 .vertical-ul li{
     display: block;
+    padding-bottom: 7px;
 }
 .vertical-ul{
     display: inline-block;
@@ -137,7 +138,7 @@ footer{
 }
 
 footer div{
-    padding: 10px;
+    padding: 20px 10px 20px 10px;
     color: white;
 }
 
