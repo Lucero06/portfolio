@@ -83,6 +83,7 @@ nav{
 }
 #nav-space{
     height: 20px;
+    height: 3vh;
     display: block;
 }
 #nav-content{
@@ -120,7 +121,7 @@ nav ul li, footer ul li {
 }
 
 article{
-    min-height: 91.8vh;
+    min-height: 75vh;
 }
 
 .vertical-ul li{
