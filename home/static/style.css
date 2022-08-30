@@ -20,8 +20,45 @@ body{
     font-family: "Raleway", sans-serif;   
 }
 
+
+@keyframes transl{
+    from{
+        top: -50%;
+    }
+    to{
+        top: -10px;
+    }
+}
+
+#spider{
+    top: -10px;
+    position: absolute;
+    width: 5.2%;
+    right: 10px;
+    z-index: -1;
+    animation-name: transl;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;   
+}
+
+article{
+    position: relative;
+    z-index: -1;
+    min-height: 75vh;
+}
+
+.web-lb{
+    width: 15%;
+    position: absolute;
+    bottom: 0px;
+}
+
 nav{
     font-family: "MedievalSharp";
+    font-size: 1em;
+    position: sticky;
+    top: 0;
+    color: white;
     
 }
 
@@ -51,36 +88,11 @@ a:link, a:visited{
     color: inherit;
 }
 
-::-webkit-scrollbar {
-    width: 15px;
-  }
-  
-body::-webkit-scrollbar-track {
-    background:  linear-gradient(0deg, #100e14 0%, #b56c21 100%);
-}
-
-body::-webkit-scrollbar-thumb {
-    border-width: 1px;
-    border-style:inset;
-    border-color: white;
-    background: transparent;
-    box-shadow: 0px 6px 11px 4px #303030;
-}
-
-body::-webkit-scrollbar-thumb:active {
-    background: rgba(0, 0, 0, 0.247);
-}
 nav, #nav-space{
     width: 100%;
     background-image: linear-gradient(90deg, black -5%, #b56c21 50%);
 }
-nav{
-    font-size: 1.2em;
-    position: sticky;
-    top: 0;
-    color: white;
-    
-}
+
 #nav-space{
     height: 20px;
     height: 3vh;
@@ -120,9 +132,6 @@ nav ul li, footer ul li {
     display: inline-block;
 }
 
-article{
-    min-height: 75vh;
-}
 
 .vertical-ul li{
     display: block;
@@ -132,7 +141,25 @@ article{
     display: inline-block;
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+body::-webkit-scrollbar-track {
+    background:  linear-gradient(0deg, #100e14 0%, #b56c21 100%);
+}
 
+body::-webkit-scrollbar-thumb {
+    border-width: 1px;
+    border-style:inset;
+    border-color: white;
+    background: transparent;
+    box-shadow: 0px 6px 11px 4px #303030;
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, 0.247);
+}
 
 footer{
     background-color: #100e14;

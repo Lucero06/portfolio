@@ -22,8 +22,12 @@
 
     <article>
         {% block content %}
+        {% comment %} <img id="cat" src="{% static 'img/vectorstock_9990211.svg' %}">  {% endcomment %}
+        <img id="spider" id="" src="{% static 'img/spider-5593259_640.png' %}"> 
+        <img class="web-lb" id="" src="{% static 'img/black-2028174.svg' %}"> 
+        
         <center class="icono">
-            <i class="fa-solid fa-person-digging"></i>
+            {% comment %} <i class="fa-solid fa-person-digging"></i> {% endcomment %}
         </center>
         {% endblock %}
     </article>
