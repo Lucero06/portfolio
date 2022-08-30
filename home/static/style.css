@@ -20,6 +20,14 @@ body{
     font-family: "Raleway", sans-serif;   
 }
 
+@media (max-width: 600px) { 
+    #spider{
+        width: 15% !important;   
+    }
+    .web-lb{
+        width: 30% !important;
+    }
+}
 
 @keyframes transl{
     from{
