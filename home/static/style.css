@@ -27,6 +27,9 @@ body{
     .web-lb{
         width: 30% !important;
     }
+    nav{
+        font-size: 1em !important;
+    }
 }
 
 @keyframes transl{
@@ -41,7 +44,7 @@ body{
 #spider{
     top: -10px;
     position: absolute;
-    width: 5.2%;
+    width: 3.5%;
     left: 10px;
     z-index: -1;
     animation-name: transl;
@@ -56,14 +59,14 @@ article{
 }
 
 .web-lb{
-    width: 15%;
+    width: 13%;
     position: absolute;
     bottom: 0px;
 }
 
 nav{
     font-family: "MedievalSharp";
-    font-size: 1em;
+    font-size: 1.2em;
     position: sticky;
     top: 0;
     color: white;
