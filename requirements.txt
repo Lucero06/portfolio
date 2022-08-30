@@ -4,3 +4,5 @@ fontawesomefree==6.1.1
 gunicorn
 whitenoise
 libsass==0.21.0
+django-compressor==4.1
+django-sass-processor==1.2.1
