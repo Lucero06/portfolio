@@ -33,10 +33,13 @@ body{
 }
 
 @keyframes transl{
-    from{
+    0%{
         top: -50%;
     }
-    to{
+    50%{
+        top: -10px;
+    }
+    100%{
         top: -10px;
     }
 }
@@ -48,8 +51,10 @@ body{
     left: 10px;
     z-index: -1;
     animation-name: transl;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;   
+    animation-duration: 8s;
+    animation-timing-function: ease-out;  
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
 }
 
 article{

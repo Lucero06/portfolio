@@ -5,8 +5,9 @@
 
     <head>
     {% load static %}
+    {% load sass_tags %}
 
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% sass_src 'style.scss' %}">
     <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
     <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
 </head>
@@ -22,10 +23,8 @@
 
     <article>
         {% block content %}
-        {% comment %} <img id="cat" src="{% static 'img/vectorstock_9990211.svg' %}">  {% endcomment %}
         <img id="spider" id="" src="{% static 'img/spider-5593259_640.png' %}"> 
-        <img class="web-lb" id="" src="{% static 'img/black-2028174.svg' %}"> 
-        
+        <img class="web-lb" id="" src="{% static 'img/black-2028174.svg' %}">       
         <center class="icono">
             {% comment %} <i class="fa-solid fa-person-digging"></i> {% endcomment %}
         </center>
