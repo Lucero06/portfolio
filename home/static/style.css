@@ -42,7 +42,7 @@ body{
     top: -10px;
     position: absolute;
     width: 5.2%;
-    right: 10px;
+    left: 10px;
     z-index: -1;
     animation-name: transl;
     animation-duration: 2s;
