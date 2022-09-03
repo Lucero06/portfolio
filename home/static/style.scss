@@ -37,10 +37,10 @@ body{
         top: -50%;
     }
     50%{
-        top: -10px;
+        top: 0px;
     }
     100%{
-        top: -10px;
+        top: 0px;
     }
 }
 
@@ -57,10 +57,12 @@ body{
     animation-direction: alternate; 
 }
 
-article{
+#content{
+    padding-top: 20px;
     position: relative;
-    z-index: -1;
+//    z-index: -1;
     min-height: 75vh;
+ //   overflow: hidden;
 }
 
 .web-lb{
@@ -156,6 +158,41 @@ nav ul li, footer ul li {
 .vertical-ul{
     display: inline-block;
 }
+
+//slider
+article{
+    overflow: hidden;
+}
+#slider{
+    position:relative;
+    z-index: -2 ;
+    text-align: left;
+    width: 500vw;
+    max-height: 60vh;
+    z-index: -900;
+}
+#slider .slide{
+    display: inline-block;
+    width: 100vw;
+    text-align: center;
+    height: 50vh;
+    overflow: none;
+}
+#slider .slide img{
+    height: 97%;
+    width: 80%;
+    object-fit:cover;
+    object-position: top;
+}
+@media screen and (max-width: 600px){
+    #slider{
+        max-height: 100vh;
+    }
+    #slider .slide img{
+        width: 100%;
+    }   
+}
+//end slider
 
 ::-webkit-scrollbar {
     width: 15px;

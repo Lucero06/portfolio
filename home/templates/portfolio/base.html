@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" type="text/css" href="{% sass_src 'style.scss' %}">
     <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+    <script src="{% static 'slider.js' %}"></script>
     <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
 </head>
 
@@ -20,17 +21,39 @@
         {% include "navbar.html" %}
     </nav>
     <div style=""></div>
-
-    <article>
-        {% block content %}
+    {% block content %}
+    <div id="content">
+    
+        
         <img id="spider" id="" src="{% static 'img/spider-5593259_640.png' %}"> 
         <img class="web-lb" id="" src="{% static 'img/black-2028174.svg' %}">       
-        <center class="icono">
-            {% comment %} <i class="fa-solid fa-person-digging"></i> {% endcomment %}
-        </center>
-        {% endblock %}
-    </article>
+        {% comment %}<center class="icono">
+             <i class="fa-solid fa-person-digging"></i> 
+        </center>{% endcomment %}
     
+    <article>
+
+        <center>
+            <div id="slider">
+                <div class="slide">
+                    <img src="{% static 'img/capt1.png' %}" >
+                </div>
+                <div class="slide">
+                    <img src="{% static 'img/capt2.png' %}" >
+                </div>
+                <div class="slide">
+                    <img src="{% static 'img/capt3.png' %}" >
+                </div>
+                <div class="slide">
+                    <img src="{% static 'img/capt5.png' %}" >
+                </div>
+            </div>
+            
+        </center>
+        
+    </article>
+</div>
+    {% endblock %}
     <footer>
         {% include "footer.html" %}
     </footer>
