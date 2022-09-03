@@ -9,12 +9,11 @@ window.onload = function () {
         console.log('inicio');
         console.log(i);
         var limit = total_slides-1;
-        var j = i+1;
+        var j = i;
         var trans =j*100;
         console.log(trans);
         slider = document.getElementById("slider");
         console.log(slider);
-        if (i < limit){
         slider.animate(
             [
                 {transform: 'translateX(-'+trans+'vw)' }
@@ -23,15 +22,12 @@ window.onload = function () {
                 duration:1000
             }
         );
-        }
         setTimeout(
             function(){
-                time=0;
+                time=3000;
+                slider.style.transform='translateX(-'+trans+'vw)';
                 if (i < limit){
-                    slider.style.transform='translateX(-'+trans+'vw)';
-
                     i+=1;
-                    time=3000;
                 }
                 else{
                     i=0;
