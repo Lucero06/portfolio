@@ -64,6 +64,11 @@ body{
     min-height: 75vh;
  //   overflow: hidden;
 }
+@media screen and (max-width:600px){
+    #content{
+        min-height: 60vh;
+    }
+}
 
 .web-lb{
     width: 13%;
@@ -169,7 +174,6 @@ article{
     text-align: left;
     width: 500vw;
     max-height: 60vh;
-    z-index: -900;
 }
 #slider .slide{
     padding:0px;
@@ -186,6 +190,7 @@ article{
     object-position: top;
 }
 @media screen and (max-width: 600px){
+
     #slider{
         max-height: 100vh;
     }
