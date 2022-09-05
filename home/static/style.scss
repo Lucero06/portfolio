@@ -179,20 +179,26 @@ article{
     text-align: left;
     width: 500vw;
     max-height: 60vh;
+    font-size: 0;
 }
 #slider .slide{
-    padding:0px;
+    padding:0px !important;
+    margin: 0px !important;
     display: inline-block;
-    width: 99vw;
+    width: 100vw;
     text-align: center;
-    height: 50vh;
-    overflow: none;
+    min-height: 50vh;
+    overflow: none;    
+    background-image: linear-gradient(to right,#00000085, rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0), #00000085);
+    //background-image: linear-gradient(to right,#bc6d0e85, rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0), #bc6d0e85);
 }
 #slider .slide img{
     height: 97%;
     width: 80%;
     object-fit:cover;
     object-position: top;
+    position: relative;
+    z-index: -1;
 }
 @media screen and (max-width: 600px){
 
