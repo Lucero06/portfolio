@@ -13,13 +13,14 @@
     <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-    <div id="nav-space">
-
-    </div>
-    <nav>
-        {% include "navbar.html" %}
-    </nav>
+<body>    
+        <div id="nav-space"> </div>
+        
+        <nav>
+            {% load static %}
+            <img id="img-nav" src="{% static 'img/skeleton-5585324.svg' %}">
+            {% include "navbar.html" %}
+        </nav>
     <div style=""></div>
     {% block content %}
     <div id="content">

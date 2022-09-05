@@ -1,19 +1,35 @@
 
 
 window.onload = function () {
+
+
+    var active= document.getElementsByClassName("active-nav")[0];
+    var rect = active.getBoundingClientRect();
+    var docEl = document.documentElement;
+    var left = rect.left + (window.pageXOffset || docEl.scrollLeft || 0);
+    var img = document.getElementById("img-nav");
+    var width_img = img.offsetWidth;
+    var width_link = active.offsetWidth;
+    var diff = width_img-width_link;
+    var diff_apply=diff/2;
+    var apply = left - diff_apply;
+    img.style.left=apply+"px";
+    img.style.visibility="initial";
+
+    //slider
     var slider = document.getElementById("slider");
     var total_slides= slider.childElementCount;
     var i = 0;
 
     function slide(i, total_slides){
-        console.log('inicio');
-        console.log(i);
+        //console.log('inicio');
+        //console.log(i);
         var limit = total_slides-1;
         var j = i;
         var trans =j*100;
-        console.log(trans);
+        //console.log(trans);
         slider = document.getElementById("slider");
-        console.log(slider);
+        //console.log(slider);
         slider.animate(
             [
                 {transform: 'translateX(-'+trans+'vw)' }
