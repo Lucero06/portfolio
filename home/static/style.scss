@@ -9,14 +9,12 @@
     url('fonts/MedievalSharp.ttf') format("truetype");
 }
 @font-face {
-    font-family: 'Eater';
-    src: local('Eater'),
-    url('fonts/Eater.ttf') format("truetype");
+    font-family: 'Quintessential';
+    src: local('Quintessential'),
+    url('fonts/Quintessential-Regular.ttf') format("truetype");
 }
-  
+
 body{
-    font-family: 'Courier New', monospace;
-    font-family: Helvetica, sans-serif;
     font-family: "Raleway", sans-serif;   
 }
 
@@ -105,9 +103,9 @@ nav li{
     transition: 0.5s;
 }
 nav li:hover, .active-nav{
-    
-    font-family: "Eater" !important;
-    //color: black;
+    font-family: "Quintessential" !important;
+    font-size: 1.35em;
+    color: black;
 }
 
 a{
