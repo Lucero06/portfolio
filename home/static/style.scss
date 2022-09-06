@@ -16,6 +16,7 @@
 
 body{
     font-family: "Raleway", sans-serif;   
+    background-color: darkslateblue;
 }
 
 @media (max-width: 600px) { 
@@ -58,7 +59,6 @@ body{
 #content{
     padding-top: 20px;
     position: relative;
-//    z-index: -1;
     min-height: 75vh;
  //   overflow: hidden;
 }
@@ -178,8 +178,9 @@ article{
     z-index: -2 ;
     text-align: left;
     width: 500vw;
-    max-height: 60vh;
+    max-height: 70vh;
     font-size: 0;
+    //background-color: #0000001c;
 }
 #slider .slide{
     padding:0px !important;
@@ -189,12 +190,33 @@ article{
     text-align: center;
     min-height: 50vh;
     overflow: none;    
-    background-image: linear-gradient(to right,#00000085, rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0), #00000085);
-    //background-image: linear-gradient(to right,#bc6d0e85, rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0), #bc6d0e85);
+    background-image: linear-gradient(to right, #0000003d, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), #0000003d);
+    
+}
+   #slider {
+    --mask: 
+      linear-gradient(to top,#0000 15px,#000 0),
+      radial-gradient(15px,#000 98%,#0000) bottom/27.75px 30px;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  } 
+
+#slider img{
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-image: url('img/pngaaa.com-349898.png');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+article:hover #slider img{
+    -webkit-mask-image:none !important;
+    mask-image: none !important;
 }
 #slider .slide img{
-    height: 97%;
-    width: 80%;
+    height: 100%;
+    width: 70%;
     object-fit:cover;
     object-position: top;
     position: relative;
@@ -302,3 +324,8 @@ form .required::before{
     text-align: center;
 }
 
+@media (max-width: 600px) { 
+    .grid-preview img{
+        width: 100%;
+    }
+}
