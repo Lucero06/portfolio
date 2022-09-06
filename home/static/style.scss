@@ -201,16 +201,13 @@ article{
             mask: var(--mask);
   } 
 
-#slider img{
-    -webkit-mask-size: cover;
-    mask-size: cover;
+.slider_art{
     -webkit-mask-image: url('img/pngaaa.com-349898.png');
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
     -webkit-mask-position: center;
     mask-position: center;
 }
-article:hover #slider img{
+
+.slider_art:hover{
     -webkit-mask-image:none !important;
     mask-image: none !important;
 }
