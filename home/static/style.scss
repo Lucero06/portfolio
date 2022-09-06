@@ -190,8 +190,10 @@ article{
     text-align: center;
     min-height: 50vh;
     overflow: none;    
+}
+
+.slider_art{
     background-image: linear-gradient(to right, #0000003d, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), #0000003d);
-    
 }
    #slider {
     --mask: 
@@ -200,11 +202,12 @@ article{
     -webkit-mask: var(--mask);
             mask: var(--mask);
   } 
-
-.slider_art{
-    -webkit-mask-image: url('img/pngaaa.com-349898.png');
-    -webkit-mask-position: center;
-    mask-position: center;
+@media (min-width: 600px) {
+    .slider_art{
+        -webkit-mask-image: url('img/pngaaa.com-349898.png');
+        -webkit-mask-position: center;
+        mask-position: center;
+    }    
 }
 
 .slider_art:hover{
