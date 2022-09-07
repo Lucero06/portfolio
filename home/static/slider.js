@@ -30,6 +30,20 @@ window.onload = function () {
         //console.log(trans);
         slider = document.getElementById("slider");
         //console.log(slider);
+        if ( i > 0){
+            slider.style.opacity=".55";
+            for (ele of slider.children){
+                ele.children[0].animate(
+                    [
+                        {transform:'skew(-5deg, 0deg)'},
+                        {transform:'skew(0deg, 0deg)'},
+                    ],{
+                        duration:1000,
+                        easing:'ease'
+                    }
+                );
+            }
+        }
         slider.animate(
             [
                 {transform: 'translateX(-'+trans+'vw)' }
@@ -40,6 +54,7 @@ window.onload = function () {
         );
         setTimeout(
             function(){
+                slider.style.opacity="1";
                 time=3000;
                 slider.style.transform='translateX(-'+trans+'vw)';
                 if (i < limit){
