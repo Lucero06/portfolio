@@ -197,8 +197,8 @@ article{
     --mask: 
       linear-gradient(to top,#0000 15px,#000 0),
       radial-gradient(15px,#000 98%,#0000) bottom/27.75px 30px;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
+    //-webkit-mask: var(--mask);
+    //mask: var(--mask);
   } 
   .slide{
     //background-image: linear-gradient(to right, #0000003d, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), #0000003d);
@@ -218,19 +218,19 @@ article{
   }
 
 #slider .slide img{
-    height: 100%;
+    
     width: 70%;
     object-fit:cover;
     object-position: top;
-    position: relative;
-    position: relative;
+    //position: relative;
+    
 }
 @media screen and (max-width: 600px){
     #slider{
         max-height: 75vh;
     }
     #slider .slide img{
-        width: 100% !important;
+        width: 99% !important;
         object-fit: contain !important;
         height: initial;
     }  
