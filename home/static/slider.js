@@ -49,7 +49,8 @@ window.onload = function () {
                 {transform: 'translateX(-'+trans+'vw)' }
             ],
             {
-                duration:1000
+                duration:1000,
+                easing:'ease-out'
             }
         );
         setTimeout(
