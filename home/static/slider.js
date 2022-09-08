@@ -14,7 +14,7 @@ window.onload = function () {
     var diff_apply=diff/2;
     var apply = left - diff_apply;
     img.style.left=apply+"px";
-    img.style.visibility="initial";
+    img.style.opacity="1";
 
     //slider
     var slider = document.getElementById("slider");
@@ -35,11 +35,11 @@ window.onload = function () {
             for (ele of slider.children){
                 ele.children[0].animate(
                     [
-                        {transform:'skew(-5deg, 0deg)'},
+                        {transform:'skew(18deg, 0deg)'},
                         {transform:'skew(0deg, 0deg)'},
                     ],{
-                        duration:1000,
-                        easing:'ease'
+                        duration:900,
+                        easing:'ease-in'
                     }
                 );
             }

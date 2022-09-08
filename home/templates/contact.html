@@ -12,7 +12,7 @@
 
 <input type="hidden" id="status" value={{status}}> </input>
 <center>
-<h2> Contacto </h2> </center>
+<h2 class="text-color"> Contacto </h2> </center>
 {% if status == 'success'%}
 <center id="msj_sent_mail">
     <span>
@@ -27,7 +27,7 @@
     </span>
 </center>
 {% endif %}
-<div class="info">
+<div class="info ">
     <span></span>
 <span>    <p><i class="fa-solid fa-id-card-clip"></i>
     Lucero Monserrat Sánchez Pavón </p>
@@ -44,9 +44,9 @@
 </div>
 
 <center>
-    <h3> Envía un correo </h3>
+    <h3 class=""> Envía un correo </h3>
 </center>
-<div>
+<div class="">
     <form action="/contacto" method="post">
         {% csrf_token %}
         <center>

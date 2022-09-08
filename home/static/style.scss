@@ -70,12 +70,10 @@ body{
 #content{
     padding-top: 20px;
     position: relative;
-    min-height: 75vh;
- //   overflow: hidden;
+    min-height: 79vh;
 }
 @media screen and (max-width:600px){
     #content{
-        min-height: 60vh;
     }
 }
 
@@ -97,8 +95,9 @@ nav{
     height:150%;
     top:-20px;
     position: absolute;
-    visibility: hidden;
+    opacity: 0;
     z-index:-1;
+    transition: all 2s;
 }
 
 h1,h2,h3,h4,h5{
@@ -198,7 +197,6 @@ article{
     width: 100vw;
     text-align: center;
     min-height: 50vh;
-    overflow: none;    
 }
 .slider_art{
     position: relative;
