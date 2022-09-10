@@ -19,6 +19,12 @@ body{
     color:black;
     background-color: whitesmoke;
 }
+@media (max-width: 600px) { 
+ body{
+    height: 100vh;
+    overflow: scroll;
+ }
+}
 
 .text-color {
     //-webkit-text-fill-color: transparent;
