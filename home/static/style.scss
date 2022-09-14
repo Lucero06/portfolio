@@ -18,6 +18,7 @@ body{
     font-family: "Raleway", sans-serif;   
     color:black;
     background-color: whitesmoke;
+    background-color: #585555;
 }
 @media (max-width: 600px) { 
  body{
@@ -193,7 +194,6 @@ article{
     position:relative;
     text-align: left;
     width: 500vw;
-    max-height: 70vh;
     font-size: 0;
 }
 #slider .slide{
@@ -202,7 +202,7 @@ article{
     display: inline-block;
     width: 100vw;
     text-align: center;
-    min-height: 50vh;
+   height: 70vh;
 }
 .slider_art{
     position: relative;
@@ -235,13 +235,17 @@ article{
 #slider .slide img{
     
     width: 70%;
+    height: 100%;
     object-fit:cover;
     object-position: top;
-    //position: relative;
+    border-width: 10px;
+    border-color: gray;
+    border-style: ridge;
     -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.534) , rgba(0, 0, 0, 0.781)15%,black 30%, black 70%,rgba(0, 0, 0, 0.781) 85%, rgba(0, 0, 0, 0.534));
     
 }
 @media screen and (max-width: 600px){
+    
     #slider{
         max-height: 75vh;
     }
@@ -252,6 +256,9 @@ article{
     }  
     .slide{
         min-height: initial !important;
+    }
+    .slider_art{
+        max-height: 30vh;
     }
 }
 //end slider
