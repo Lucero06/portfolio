@@ -42,6 +42,16 @@ window.onload = function () {
                         easing:'ease-in'
                     }
                 );
+                ele.animate(
+                    [
+                        {transform:'skew(18deg, 0deg)'},
+                        {transform:'skew(0deg, 0deg)'},
+                    ],{
+                        duration:900,
+                        easing:'ease-in',
+                        pseudoElement:":before"
+                    }
+                );
             }
         }
         slider.animate(
