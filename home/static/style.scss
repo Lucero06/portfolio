@@ -265,6 +265,9 @@ article{
         object-fit: contain !important;
         height: initial;
     }  
+    .slide:before{
+        border: none !important;
+    }
     .slide{
         min-height: initial !important;
     }
