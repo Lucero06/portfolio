@@ -51,7 +51,7 @@ body{
     .list_{
         padding: 0px !important;
         display: block !important;
-        padding-left: 10% !important;
+        padding-left: 20% !important;
     }
 }
 
@@ -86,7 +86,13 @@ body{
     min-height: 79vh;
 }
 @media screen and (max-width:600px){
-    #content{
+    .list_ li{
+        //text-align: center;
+    }
+    .list_ li:before{
+        content:'*';
+        font-size:1.5em;    
+        vertical-align: top;
     }
 }
 
@@ -245,9 +251,11 @@ ul.text-effect{
     animation-iteration-count: infinite;
     animation-direction: alternate;
 
+    background-attachment: fixed;
+    background-blend-mode: screen;
     background-image: url('img/pinpng.com-mexican-png-367797.png');
-    background-repeat: repeat;
-    background-size: contain;
+    background-repeat: repeat !important;
+    background-size: contain !important;
     background-position: center;
     z-index: -2;
     -webkit-mask-image: url('img/pngaaa.com-349898.png');
