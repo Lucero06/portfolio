@@ -1,8 +1,58 @@
 
 
 window.onload = function () {
+    //text
+    var keyframes=[
+        {
+            opacity:0
+        },
+        {
+            opacity:1
+        }
+    ];
+    var time_delay=300;
+    var duration=3000;
+    if (document.querySelector("h1.text-effect") != null){
+        document.querySelector("h1.text-effect").animate(
+            keyframes,
+            {duration:duration,
+                delay:time_delay
+            }
+        );
+        var end=time_delay+duration;
+        setTimeout(
+            function(){
+                document.querySelector("h1.text-effect").style.opacity='1';      
+            },
+            end
+        );
+    
+        var time_delay=1000;
+        var duration=2000;
+        for (ele of document.querySelectorAll("ul.text-effect")){
+            ele.animate(
+                keyframes,
+                {duration:duration,
+                    delay:time_delay
+                }
+            );
+        }
+        
+        var end=time_delay+duration;
+        setTimeout(
+            function(){
+                for (ele of document.querySelectorAll("ul.text-effect")){
+                    ele.style.opacity='1';      
+                }
+            },
+            end
+        );
+    
 
+    }
+    
 
+        // nav img
     var active= document.getElementsByClassName("active-nav")[0];
     var rect = active.getBoundingClientRect();
     var docEl = document.documentElement;
