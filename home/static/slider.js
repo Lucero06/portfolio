@@ -1,7 +1,7 @@
-
-
-window.onload = function () {
-    //text
+document.addEventListener("DOMContentLoaded", function(){
+text_animate();
+});
+function text_animate(){
     var keyframes=[
         {
             opacity:0
@@ -50,7 +50,10 @@ window.onload = function () {
     
 
     }
-    
+}
+
+window.onload = function () {
+  
 
         // nav img
     var active= document.getElementsByClassName("active-nav")[0];
