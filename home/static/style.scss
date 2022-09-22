@@ -21,6 +21,15 @@ body{
     //background-color: #585555;
     background: linear-gradient(45deg, black, #bc6e0e);
 }
+body:before{
+    content: '';
+    z-index: -2;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, black, #bc6e0e);
+    background:  linear-gradient(0deg, #100e14 0%, #b56c21 100%);
+}
 @media (max-width: 600px) { 
  body{
     overflow: scroll;
@@ -147,7 +156,8 @@ a:link, a:visited{
 
 nav, #nav-space{
     width: 100%;
-    background-image: linear-gradient(90deg, black -5%, #b56c21 50%);
+    background-color: #b56c21;
+    //background-image: linear-gradient(90deg, black -5%, #b56c21 50%);
 }
 
 #nav-space{
