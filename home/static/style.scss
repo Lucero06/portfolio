@@ -307,7 +307,7 @@ article{
 .slider_art{
     position: relative;
     z-index: -2;
-    //-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.534) , rgba(0, 0, 0, 0.781)15%,black 30%, black 70%,rgba(0, 0, 0, 0.781) 85%, rgba(0, 0, 0, 0.534));
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.534) , rgba(0, 0, 0, 0.781)15%,black 30%, black 70%,rgba(0, 0, 0, 0.781) 85%, rgba(0, 0, 0, 0.534));
 }
    #slider {
     --mask: 
@@ -337,10 +337,13 @@ article{
 //   }
 
 #slider .slide img{
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 95%;
     object-fit:cover;
     object-position: top;
+    box-shadow: rgba(188, 109, 14, 0.4) 5px 5px, rgba(188, 109, 14, 0.3) 10px 10px, rgba(188, 109, 14, 0.2) 15px 15px, rgba(188, 109, 14, 0.1) 20px 20px, rgba(188, 109, 14, 0.05) 25px 25px;
+    
+    
     //-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.534) , rgba(0, 0, 0, 0.781)15%,black 30%, black 70%,rgba(0, 0, 0, 0.781) 85%, rgba(0, 0, 0, 0.534));
 }
 #slider .slide:before{
