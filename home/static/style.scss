@@ -95,13 +95,37 @@ body:before{
     min-height: 79vh;
 }
 @media screen and (max-width:600px){
-    .list_ li{
-        //text-align: center;
-    }
     .list_ li:before{
-        content:'*';
-        font-size:1.5em;    
+        content:'';
+        background-size: contain;
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        width: 20px; 
+        height: 20px;
         vertical-align: top;
+    }
+    .list_ li:nth-child(3):before{
+        background-image: url('img/pngegg (3).png');
+    }
+    .list_ li:nth-child(2):before{
+        background-image: url('img/pngegg.png');
+    }
+    .list_ li:nth-child(1):before{
+        background-image: url('img/pngegg (1).png');
+    }
+    .list_ li:nth-child(4):before{
+        background-image: url('img/pngwing.com (3).png');
+    }
+    .list_ li:nth-child(5):before{
+        background-image: url('img/pngegg (5).png');
+    }
+    .list_ li:nth-child(6):before{
+        background-image: url('img/pngwing.com (5).png');
+    }
+    .list_ li:nth-child(7):before{
+        background-image: url('img/pngegg (4).png');
     }
 }
 
@@ -130,7 +154,12 @@ nav{
     opacity: 0;
     z-index:-1;
     transition: all 2s;
-    filter: hue-rotate(-0.25turn);
+    background-color: #100e14;
+    -webkit-mask-image: url('img/skeleton-5585324.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+
 }
 
 h1,h2,h3,h4,h5{
@@ -148,7 +177,7 @@ nav li{
 nav li:hover, .active-nav{
     font-family: "Quintessential" !important;
     font-size: 1.35em;
-    color: black;
+    color: #100e14;
 }
 
 a{
@@ -171,7 +200,7 @@ nav, #nav-space{
     display: block;
 }
 #nav-content{
-    box-shadow:  0px 12px 13px -11px black;
+    box-shadow:  0px 12px 13px -11px #100e14;
     padding-bottom: 5px;
 }
 
@@ -231,7 +260,7 @@ ul.text-effect{
     position:relative;
     z-index: -1;
     font-weight: bold;
-    text-shadow: 2px 2px #0006 ;
+    text-shadow: 2px 2px #110c146b ;
     //height: 90vh;
 }
 
@@ -279,6 +308,14 @@ ul.text-effect{
     -webkit-mask-size: contain;
     -webkit-mask-position: top;
 }
+@media (max-width: 600px) { 
+    .skll:before{
+        background-repeat: no-repeat !important;
+        background-position: top;
+        -webkit-mask-repeat: round;
+    }
+}
+
 
 .list_{
     text-align: left;
