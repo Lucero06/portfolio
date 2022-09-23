@@ -94,7 +94,7 @@ body:before{
     position: relative;
     min-height: 79vh;
 }
-@media screen and (max-width:600px){
+
     .list_ li:before{
         content:'';
         background-size: contain;
@@ -127,7 +127,7 @@ body:before{
     .list_ li:nth-child(7):before{
         background-image: url('img/pngegg (4).png');
     }
-}
+
 
 .web-lb{
     width: 10%;
@@ -154,7 +154,7 @@ nav{
     opacity: 0;
     z-index:-1;
     transition: all 2s;
-    background-color: #100e14;
+    background-color: #100e14 !important;
     -webkit-mask-image: url('img/skeleton-5585324.svg');
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: cover;
@@ -177,7 +177,7 @@ nav li{
 nav li:hover, .active-nav{
     font-family: "Quintessential" !important;
     font-size: 1.35em;
-    color: #100e14;
+    color: #100e14 !important;
 }
 
 a{
@@ -259,7 +259,7 @@ ul.text-effect{
     color: whitesmoke;
     position:relative;
     z-index: -1;
-    font-weight: bold;
+    //font-weight: bold;
     text-shadow: 2px 2px #110c146b ;
     //height: 90vh;
 }
