@@ -4,14 +4,37 @@
     url('fonts/Raleway-VariableFont_wght.ttf') format("truetype");
   }
 @font-face {
-    font-family: 'MedievalSharp';
-    src: local('MedievalSharp'),
-    url('fonts/MedievalSharp.ttf') format("truetype");
-}
-@font-face {
     font-family: 'Quintessential';
     src: local('Quintessential'),
     url('fonts/Quintessential-Regular.ttf') format("truetype");
+}
+@font-face {
+    font-family: 'MedievalSharp';
+    src: local('MedievalSharp'),
+    url('fonts/MedievalSharp-Regular.ttf') format("truetype");
+}
+@font-face {
+    font-family: 'Caudex';
+    src: local('Caudex'),
+    url('fonts/Caudex-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Aclonica';
+    src: local('Aclonica'),
+    url('fonts/Aclonica-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'UncialAntiqua';
+    src: local('UncialAntiqua'),
+    url('fonts/UncialAntiqua-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Metamorphous';
+    src: local('Metamorphous'),
+    url('fonts/Metamorphous-Regular.ttf') format("truetype");
 }
 
 body{
@@ -263,7 +286,10 @@ ul.text-effect{
     text-shadow: 2px 2px #110c146b ;
     //height: 90vh;
 }
-
+.skll h1{
+    font-weight: lighter;
+    font-size: 1.7em;
+}
 @keyframes backtrans{
     0%{
         background-color: #faebd738;
