@@ -14,6 +14,13 @@
 </head>
 
 <body>    
+    <svg height="0px" width="0px">
+        <defs>
+          <filter id="FilterSVG" color-interpolation-filters="sRGB">
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+          </filter>
+        </defs>
+      </svg>
         <div id="nav-space"> </div>
         
         <nav>
@@ -27,7 +34,7 @@
     
         
         {% comment %} <img id="spider" id="" src="{% static 'img/spider-5593259_640.png' %}">  {% endcomment %}
-        <img class="web-lb" id="" src="{% static 'img/halloween-5644244.svg' %}">       
+        {% comment %} <img class="web-lb" id="" src="{% static 'img/halloween-5644244.svg' %}"> {% endcomment %}
         {% comment %}<center class="icono">
              <i class="fa-solid fa-person-digging"></i> 
         </center>{% endcomment %}
