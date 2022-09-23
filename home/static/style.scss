@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'MedievalSharp';
     src: local('MedievalSharp'),
-    url('fonts/MedievalSharp-Regular.ttf') format("truetype");
+    url('fonts/MedievalSharp.ttf') format("truetype");
 }
 @font-face {
     font-family: 'Caudex';
@@ -38,7 +38,7 @@
 }
 
 body{
-    font-family: "Raleway", sans-serif;   
+    font-family: "Caudex";   
     color:black;
     color: whitesmoke;
     //background-color: #585555;
@@ -163,7 +163,7 @@ body:before{
 }
 
 nav{
-    font-family: "MedievalSharp";
+    //font-family: "Raleway";
     font-size: 1.2em;
     position: sticky;
     top: 0;
