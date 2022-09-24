@@ -6,6 +6,7 @@
     <head>
     {% load static %}
     {% load sass_tags %}
+    {% url 'preview' as preview_url %}
 
     <link rel="stylesheet" type="text/css" href="{% sass_src 'style.scss' %}">
     <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
@@ -70,16 +71,24 @@
         <article class="slider_art">
             <div id="slider">
                 <div class="slide">
+                    <a href="{% url 'preview' %}">
                     <img src="{% static 'img/capt1.png' %}" >
+                    </a>
                 </div>
                 <div class="slide">
+                    <a href="{% url 'preview' %}">
                     <img src="{% static 'img/capt2.png' %}" >
+                </a>
                 </div>
                 <div class="slide">
+                    <a href="{% url 'preview' %}">
                     <img src="{% static 'img/capt3.png' %}" >
+                </a>
                 </div>
                 <div class="slide">
+                    <a href="{% url 'preview' %}">
                     <img src="{% static 'img/capt5.png' %}" >
+                </a>
                 </div>
             </div>
     </article>
