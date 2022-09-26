@@ -189,6 +189,7 @@ nav{
 h1,h2,h3,h4,h5{
     font-weight: 500 !important;
     line-height: 1.2;
+    
 }
 .icono{
     font-size: 3em;
@@ -286,6 +287,12 @@ ul.text-effect{
     //font-weight: bold;
     text-shadow: 2px 2px #110c146b ;
     //height: 90vh;
+    // text-shadow:
+    //             3px 1px 0px rgba(188, 109, 14, 1) ,
+    //             5px 3px 0px rgba(188, 109, 14, 0.6) ,
+    //             7px 5px 2px rgba(188, 109, 14, 0.4) ,
+    //             9px 7px 3px rgba(188, 109, 14, 0.2),
+    //             11px 9px 5px  rgba(188, 109, 14, 0.1) ;
 }
 .skll h1{
     font-weight: lighter;
@@ -324,7 +331,7 @@ ul.text-effect{
     animation-direction: alternate;
 
     background-attachment: fixed;
-    background-blend-mode: screen;
+    background-blend-mode: hue;
     background-image: url('img/pinpng.com-mexican-png-367797.png');
     background-repeat: repeat !important;
     background-size: contain !important;

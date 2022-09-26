@@ -250,7 +250,7 @@ ul.text-effect {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   background-attachment: fixed;
-  background-blend-mode: screen;
+  background-blend-mode: hue;
   background-image: url("img/pinpng.com-mexican-png-367797.png");
   background-repeat: repeat !important;
   background-size: contain !important;
