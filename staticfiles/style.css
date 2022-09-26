@@ -88,30 +88,30 @@ body:before {
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 30px;
   vertical-align: top; }
 
 .list_ li:nth-child(3):before {
-  background-image: url("img/pngegg (3).png"); }
+  background-image: url("img/pngegg (3)-30x30.png"); }
 
 .list_ li:nth-child(2):before {
-  background-image: url("img/pngegg.png"); }
+  background-image: url("img/pngegg-30x30.png"); }
 
 .list_ li:nth-child(1):before {
-  background-image: url("img/pngegg (1).png"); }
+  background-image: url("img/pngegg (1)-30x30.png"); }
 
 .list_ li:nth-child(4):before {
-  background-image: url("img/pngwing.com (3).png"); }
+  background-image: url("img/pngwing(3)-30x30.png"); }
 
 .list_ li:nth-child(5):before {
-  background-image: url("img/pngegg (5).png"); }
+  background-image: url("img/pngegg (5)-30x30.png"); }
 
 .list_ li:nth-child(6):before {
-  background-image: url("img/pngwing.com (5).png"); }
+  background-image: url("img/pngwing(5)-30x30.png"); }
 
 .list_ li:nth-child(7):before {
-  background-image: url("img/pngegg (4).png"); }
+  background-image: url("img/pngegg (4)-30x30.png"); }
 
 .web-lb {
   width: 10%;
