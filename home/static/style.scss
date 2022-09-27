@@ -189,7 +189,7 @@ nav{
 h1,h2,h3,h4,h5{
     font-weight: 500 !important;
     line-height: 1.2;
-    
+    font-family: "Quintessential" !important;
 }
 .icono{
     font-size: 3em;
@@ -531,11 +531,11 @@ footer div{
     padding: 2px;
 }
 
-form .required::before{
-    content: '*';
+form .required:before{
+     content: '*';
     color: red;
-    font-size: 1.8em;
-    vertical-align: text-top;
+    //  font-size: 1.8em;
+    // vertical-align: text-top;
 }
 
 .info{
