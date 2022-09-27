@@ -12,8 +12,8 @@ function text_animate(){
     ];
     var time_delay=300;
     var duration=3000;
-    if (document.querySelector("h1.text-effect") != null){
-        document.querySelector("h1.text-effect").animate(
+    if (document.querySelector(".titulo.text-effect") != null){
+        document.querySelector(".titulo.text-effect").animate(
             keyframes,
             {duration:duration,
                 delay:time_delay
@@ -22,7 +22,7 @@ function text_animate(){
         var end=time_delay+duration;
         setTimeout(
             function(){
-                document.querySelector("h1.text-effect").style.opacity='1';      
+                document.querySelector(".titulo.text-effect").style.opacity='1';      
             },
             end
         );
