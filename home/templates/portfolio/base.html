@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="{% sass_src 'style.scss' %}">
     <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
-    <script src="{% static 'slider.js' %}"></script>
+    
     <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
 </head>
 
@@ -103,6 +103,7 @@
     {% endblock %}
     <footer>
         {% include "footer.html" %}
+        <script src="{% static 'slider.js' %}"></script>
     </footer>
 </body>
 
