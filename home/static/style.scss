@@ -516,6 +516,9 @@ footer div{
 .padd-l{
     padding: 0 0 0 10px;
 }
+.marg-l:not(:first-of-type){
+    margin: 0 0 0 2em;
+}
 
 .form{
     width: 80%;

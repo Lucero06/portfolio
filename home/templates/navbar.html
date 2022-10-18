@@ -7,25 +7,25 @@
         {% url 'cv' as cv_url %}
         <li 
             {% if  request.path  ==  home_url %}
-            class="padd-l active-nav"
+            class="marg-l active-nav"
             {%else%}
-            class="padd-l" 
+            class="marg-l" 
             {%endif%} >
             <a href="{% url 'home' %}">Inicio</a>
         </li>
         <li 
             {% if  request.path  ==  preview_url %}
-            class="padd-l active-nav"
+            class="marg-l active-nav"
             {%else%}
-            class="padd-l" 
+            class="marg-l" 
             {%endif%}>
             <a href="{% url 'preview' %}">Portafolio</a>
         </li>
         <li 
             {% if  request.path  ==  contact_url %}
-            class="padd-l active-nav"
+            class="marg-l active-nav"
             {%else%}
-            class="padd-l" 
+            class="marg-l" 
             {%endif%}>
             <a href="{% url 'contact' %}">Contacto</a>
         </li>
