@@ -9,6 +9,16 @@ from django.conf import settings
 from decouple import config
 from smtplib import SMTPException
 
+from django.contrib.sitemaps import Sitemap
+from django.shortcuts import reverse
+
+class StaticViewSitemap(Sitemap):
+    def items(self):
+        return ['preview', 'contact', 'cv', 'home']
+    
+    def location(self, item):
+        return reverse(item)
+
 class HomeView(View):
     def get(self,request):
         template_name='portfolio/base.html'
