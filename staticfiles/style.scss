@@ -280,7 +280,11 @@ nav ul li, footer ul li {
 ul.text-effect{
     opacity: 0;
 }
-.skll{
+.skll:not(:first-child){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    
     color: whitesmoke;
     position:relative;
     //z-index: -1;
@@ -293,6 +297,15 @@ ul.text-effect{
     //             7px 5px 2px rgba(188, 109, 14, 0.4) ,
     //             9px 7px 3px rgba(188, 109, 14, 0.2),
     //             11px 9px 5px  rgba(188, 109, 14, 0.1) ;
+}
+
+.skll ul:first-of-type{
+    
+    justify-self: end;
+}
+.skll ul:last-of-type{
+    // padding-inline-start: 0px;
+    justify-self: start;
 }
 .skll h1{
     font-weight: lighter;
@@ -354,7 +367,6 @@ ul.text-effect{
 .list_{
     text-align: left;
     list-style: none;
-    display: inline-block;
     vertical-align: top;
         
 }
@@ -547,6 +559,7 @@ form .required:before{
 
 .info{
     display: grid;
+    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
