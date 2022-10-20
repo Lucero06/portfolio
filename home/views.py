@@ -11,6 +11,24 @@ from smtplib import SMTPException
 
 from django.contrib.sitemaps import Sitemap
 from django.shortcuts import reverse
+from django.views.decorators.http import require_GET
+
+
+@require_GET
+def robots_txt(request):
+    lines = [
+        "User-agent: Googlebot",
+        "Disallow: ",
+        "User-agent: googlebot-image",
+        "Disallow: ",
+        "User-agent: googlebot-mobile",
+        "Disallow: ",
+        "User-agent: *",
+        "Disallow: ",
+        "Disallow: /cgi-bin/",
+        "Sitemap: https://lemons06.herokuapp.com/sitemap.xml"
+    ]
+    return HttpResponse("\n".join(lines), content_type="text/plain")
 
 class StaticViewSitemap(Sitemap):
     def items(self):
@@ -18,15 +36,6 @@ class StaticViewSitemap(Sitemap):
     
     def location(self, item):
         return reverse(item)
-
-class Robots(View):
-    def get(self, request):
-        test_file = open('home/static/robots.txt', 'rb')
-        response = HttpResponse(content=test_file)
-        response['Content-Type'] = 'application/txt'
-        response['Content-Disposition'] = 'attachment; filename="%s.txt"' \
-                                        % 'robots'
-        return response
 
 class HomeView(View):
     def get(self,request):
