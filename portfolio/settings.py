@@ -148,6 +148,7 @@ STATICFILES_FINDERS = [
 ]
 
 SASS_PROCESSOR_ROOT = 'staticfiles'
+#SASS_PROCESSOR_ROOT = 'static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

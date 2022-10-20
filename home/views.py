@@ -19,6 +19,15 @@ class StaticViewSitemap(Sitemap):
     def location(self, item):
         return reverse(item)
 
+class Robots(View):
+    def get(self, request):
+        test_file = open('home/static/robots.txt', 'rb')
+        response = HttpResponse(content=test_file)
+        response['Content-Type'] = 'application/txt'
+        response['Content-Disposition'] = 'attachment; filename="%s.txt"' \
+                                        % 'robots'
+        return response
+
 class HomeView(View):
     def get(self,request):
         template_name='portfolio/base.html'

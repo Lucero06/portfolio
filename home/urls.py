@@ -1,8 +1,9 @@
 from django.urls import path
 
-from home.views import MorningGreetingView, HomeView, ContactView, CvView,PreviewView
+from home.views import MorningGreetingView, HomeView, ContactView, CvView,PreviewView, Robots
 
 urlpatterns = [
+    path('robots.txt', Robots.as_view(), name='robots'),
     path('', HomeView.as_view(), name='home'),
     path('contacto', ContactView.as_view(), name='contact'),
     path('cv', CvView.as_view(), name='cv'),
