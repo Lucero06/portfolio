@@ -11,7 +11,7 @@
 </script>
 
 <input type="hidden" id="status" value={{status}}> </input>
-<center>
+<center style="margin-top:3em">
 <h2 class="text-color"> Contacto </h2> </center>
 {% if status == 'success'%}
 <center id="msj_sent_mail">
@@ -29,15 +29,17 @@
 {% endif %}
 <div class="info ">
     <span></span>
-<span>    <p><i class="fa-solid fa-id-card-clip"></i>
+<span>    
+    <p><i class="fa-solid fa-id-card-clip"></i>
+        Ing. Sistemas computacionales
+    </p>
+    <p><i class="fa-solid fa-id-card-clip"></i>
     Lucero Monserrat Sánchez Pavón </p>
+    <p>
     <p><i class="fa-solid fa-earth-americas"></i> Orizaba, Ver. México</p>
-    
      <p>
         {% comment %} <i class="fa-solid fa-mobile-screen"></i> {{number}} {% endcomment %}
     </p> 
-
-    
     <p><i class="fa-regular fa-envelope"></i> {{mail}}</p></span>
     <span></span>
 </div>
