@@ -29,8 +29,7 @@
 body {
   font-family: "Caudex";
   color: black;
-  color: whitesmoke;
-  background: linear-gradient(45deg, black, #bc6e0e); }
+  color: whitesmoke; }
 
 @media (max-width: 600px) {
   body {
@@ -42,8 +41,7 @@ body:before {
   position: fixed;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(45deg, black, #bc6e0e);
-  background: linear-gradient(0deg, #100e14 0%, #b56c21 100%); }
+  background: linear-gradient(to bottom, #100e14, 90%, #00ffa1); }
 
 .titulo {
   letter-spacing: .15em;
@@ -132,8 +130,8 @@ nav {
   font-size: 1.2em;
   position: sticky;
   top: 0;
-  color: white;
   color: #110c14a3;
+  color: #9f9f9f;
   z-index: 2; }
 
 #img-nav {
@@ -143,7 +141,7 @@ nav {
   opacity: 0;
   z-index: -1;
   transition: all 2s;
-  background-color: #100e14 !important;
+  background-color: whitesmoke !important;
   -webkit-mask-image: url("img/skeleton-5585324.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
@@ -165,7 +163,8 @@ nav li {
 nav li:hover, .active-nav {
   font-family: "Quintessential" !important;
   font-size: 1.35em;
-  color: #100e14 !important; }
+  color: #100e14;
+  color: whitesmoke; }
 
 a {
   text-decoration: none; }
@@ -175,7 +174,8 @@ a:link, a:visited {
 
 nav, #nav-space {
   width: 100%;
-  background-color: #b56c21; }
+  background-color: #b56c21;
+  background-color: #100e14; }
 
 #nav-space {
   height: 20px;
