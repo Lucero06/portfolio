@@ -391,7 +391,12 @@
     width: 10px; }
   
   body::-webkit-scrollbar-track {
-    background: linear-gradient(0deg, #100e14 0%, #b56c21 100%); }
+    // background: linear-gradient(0deg, #100e14 0%, #b56c21 100%); 
+    // background: linear-gradient(0deg, #100e14 0%,#00ffa1 100%);
+    background: linear-gradient(to bottom, #100e14 , 90%,#00ffa1 ); 
+    
+    // background: linear-gradient(0deg, #00ffa1 0%,#100e14 90% ); 
+  }
   
   body::-webkit-scrollbar-thumb {
     border-width: 1px;
