@@ -255,7 +255,11 @@
   .skll h1 {
     font-weight: lighter;
     font-size: 1.7em; }
-  
+    @media (max-width: 600px) {
+      .skll {
+        display: block !important;
+      }
+    }
   @keyframes backtrans {
     0% {
       background-color: #faebd738; }
