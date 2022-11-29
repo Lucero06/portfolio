@@ -12,7 +12,7 @@ from smtplib import SMTPException
 from django.contrib.sitemaps import Sitemap
 from django.shortcuts import reverse
 from django.views.decorators.http import require_GET
-
+from decouple import config
 
 @require_GET
 def robots_txt(request):
@@ -30,6 +30,12 @@ def robots_txt(request):
     ]
     return HttpResponse("\n".join(lines), content_type="text/plain")
 
+def variables():
+    return {
+        'number':config('CEL_NUMBER'),
+        'mail':config('EMAIL')
+    }
+
 class StaticViewSitemap(Sitemap):
     def items(self):
         return ['preview', 'contact', 'cv', 'home']
@@ -39,18 +45,21 @@ class StaticViewSitemap(Sitemap):
 
 class HomeView(View):
     def get(self,request):
+        variables_o=variables()
         template_name='portfolio/base.html'
-        return render(request, template_name)
+        return render(request, template_name,variables_o)
 
 class CvView(View):
     def get(self,request):
+        variables_o=variables()
         template_name='cv.html'
         return render(request, template_name)
 
 class PreviewView(View):
     def get(self, request):
+        variables_o=variables()
         template_name='previews.html'
-        return render(request, template_name)
+        return render(request, template_name, variables_o)
 
 class ContactView(HomeView):
     form_class=MailForm
