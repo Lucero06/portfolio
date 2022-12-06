@@ -15,7 +15,8 @@
     content="portafolio, programador, full, stack, fullstack,
             mexico,méxico, Lucero, Monserrat, Sanchez, Pavon, portfolio, portafolio">
     <meta name="author" content="Lucero Monserrat Sánchez Pavón">
-    <meta name="google-site-verification" content="504I5gZCWokRhaI4jGZCjI9CUm4wyjwRWkRWfsWjFaU" />
+    {% comment %} <meta name="google-site-verification" content="504I5gZCWokRhaI4jGZCjI9CUm4wyjwRWkRWfsWjFaU" /> {% endcomment %}
+    <meta name="google-site-verification" content="6VFAB9u2V5jMrrn8CrnxZwH3vpSkhgVgTi-EPhtb3cE" />
     <script type="application/ld+json">
         {"@context":"https://schema.org",
         "@graph":[
@@ -123,15 +124,20 @@
                 </div>
                 <div class="slide">
                     <a href="{% url 'preview' %}">
+                    <img src="{% static 'img/reporte.png' %}" >
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="{% url 'preview' %}">
                     <img src="{% static 'img/1.png' %}" >
                     </a>
                 </div>
                 
-                <div class="slide">
+                {% comment %} <div class="slide">
                     <a href="{% url 'preview' %}">
                     <img src="{% static 'img/createordersnicehash.png' %}" >
                     </a>
-                </div>
+                </div> {% endcomment %}
 
                 <div class="slide">
                     <a href="{% url 'preview' %}">

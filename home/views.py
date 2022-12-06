@@ -26,7 +26,7 @@ def robots_txt(request):
         "User-agent: *",
         "Disallow: ",
         "Disallow: /cgi-bin/",
-        "Sitemap: https://lemons06.herokuapp.com/sitemap.xml"
+        "Sitemap: http://monse66.pythonanywhere.com/sitemap.xml"
     ]
     return HttpResponse("\n".join(lines), content_type="text/plain")
 
