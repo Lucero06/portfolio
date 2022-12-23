@@ -102,26 +102,30 @@
     vertical-align: top;
     filter: brightness(0.5); }
   
-  .list_ li:nth-child(3):before {
-    background-image: url("img/pngegg (3)-30x30.png"); }
+    .fa-check{
+      color: #00ffa1 !important;
+    }
+
+  // .list_ li:nth-child(3):before {
+  //   background-image: url("img/pngegg (3)-30x30.png"); }
   
-  .list_ li:nth-child(2):before {
-    background-image: url("img/pngegg-30x30.png"); }
+  // .list_ li:nth-child(2):before {
+  //   background-image: url("img/pngegg-30x30.png"); }
   
-  .list_ li:nth-child(1):before {
-    background-image: url("img/pngegg (1)-30x30.png"); }
+  // .list_ li:nth-child(1):before {
+  //   background-image: url("img/pngegg (1)-30x30.png"); }
   
-  .list_ li:nth-child(4):before {
-    background-image: url("img/pngwing(3)-30x30.png"); }
+  // .list_ li:nth-child(4):before {
+  //   background-image: url("img/pngwing(3)-30x30.png"); }
   
-  .list_ li:nth-child(5):before {
-    background-image: url("img/pngegg (5)-30x30.png"); }
+  // .list_ li:nth-child(5):before {
+  //   background-image: url("img/pngegg (5)-30x30.png"); }
   
-  .list_ li:nth-child(6):before {
-    background-image: url("img/pngwing(5)-30x30.png"); }
+  // .list_ li:nth-child(6):before {
+  //   background-image: url("img/pngwing(5)-30x30.png"); }
   
-  .list_ li:nth-child(7):before {
-    background-image: url("img/pngegg (4)-30x30.png"); }
+  // .list_ li:nth-child(7):before {
+  //   background-image: url("img/pngegg (4)-30x30.png"); }
   
   .web-lb {
     width: 10%;
@@ -268,30 +272,30 @@
     100% {
       background-color: #00000091; } }
   
-  .skll:before {
-    opacity: 0.36;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    animation-name: backtrans;
-    animation-duration: 8s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    background-attachment: fixed;
-    background-blend-mode: hue;
-    background-image: url("img/pinpng.com-mexican-png-367797.png");
-    background-repeat: repeat !important;
-    background-size: contain !important;
-    background-position: center;
-    z-index: -2;
-    -webkit-mask-image: url("img/pngaaa.com-349898.png");
-    -webkit-mask-repeat: repeat;
-    -webkit-mask-size: contain;
-    -webkit-mask-position: top; }
+  // .skll:before {
+  //   opacity: 0.36;
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   height: 100%;
+  //   width: 100%;
+  //   animation-name: backtrans;
+  //   animation-duration: 8s;
+  //   animation-delay: 1s;
+  //   animation-iteration-count: infinite;
+  //   animation-direction: alternate;
+  //   background-attachment: fixed;
+  //   background-blend-mode: hue;
+  //   background-image: url("img/pinpng.com-mexican-png-367797.png");
+  //   background-repeat: repeat !important;
+  //   background-size: contain !important;
+  //   background-position: center;
+  //   z-index: -2;
+  //   -webkit-mask-image: url("img/pngaaa.com-349898.png");
+  //   -webkit-mask-repeat: repeat;
+  //   -webkit-mask-size: contain;
+  //   -webkit-mask-position: top; }
   
   @media (max-width: 600px) {
     .skll:before {
@@ -465,17 +469,31 @@
     color: orangered;
     font-weight: bold; }
   
-  .grid-preview img {
-    width: 80%;
-    margin-bottom: 10px;
+  #grid-preview{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #grid-preview img {
+    max-width: 49vw;
+    opacity: 0;
+    transition: opacity 2s;
     border: darkcyan;
     border-width: 1px;
-    border-style: solid; }
+    border-style: solid; 
+  }
   
-  .grid-preview {
-    text-align: center; }
   
   @media (max-width: 600px) {
-    .grid-preview img {
-      width: 100%; } }
+    #grid-preview{
+      display: block !important;
+      width: 100% !important;
+    }
+    #grid-preview img {
+      width: 100%;
+      max-width: none;
+    } 
+  }
   

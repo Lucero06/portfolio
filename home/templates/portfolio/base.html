@@ -71,7 +71,7 @@
         
         <nav>
             {% load static %}
-            <img id="img-nav" src="{% static 'img/skeleton-5585324.svg' %}">
+            {% comment %} <img id="img-nav" src="{% static 'img/skeleton-5585324.svg' %}"> {% endcomment %}
             {% include "navbar.html" %}
         </nav>
     <div style=""></div>
@@ -89,28 +89,28 @@
         <center class="skll">
             {% comment %} <br> {% endcomment %}
             <ul class="list_ text-effect">
-                <li> API REST </li>
-                <li> GIT </li>
-                <li> DDL, DML, DCL </li>
-                <li> SQL </li>
-                <li> Python </li>
-                <li> PHP </li>
-                <li> HTML </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> API REST </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> GIT </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> DDL, DML, DCL </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> SQL </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> Python </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> PHP </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> HTML </li>
                 
             </ul>
             <ul class="list_ text-effect">
-                <li> Postman </li>
-                <li> Slack </li>
-                <li> Jira </li>
-                <li> Javascript,JQuery, TypeScript, Ajax, CSS </li>
-                <li> Responsive Web Design </li>
-                <li> NoSql </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> Postman </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> Slack </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> Jira </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> Javascript,JQuery, TypeScript, Ajax, CSS </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> Responsive Web Design </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> NoSql </li>
             </ul>
             <ul class="list_ text-effect">
-                <li> Django </li>
-                <li> CodeIgniter </li>
-                <li> Angular </li>
-                <li> .NET </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> Django </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> CodeIgniter </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> Angular </li>
+                <li><i class="fa-sharp fa-solid fa-check"></i> .NET </li>
             </ul>
             <br>
             </center>
@@ -168,7 +168,20 @@
     {% endblock %}
     <footer>
         {% include "footer.html" %}
+        <script src="{% static 'grid.js' %}"></script>
+        <script src="{% static 'nav.js' %}"></script>
         <script src="{% static 'slider.js' %}"></script>
+        <script>
+            window.onload = function () {
+                nav_img();
+                slider();
+                grid();
+                addEventListener("resize", (event) => {
+                grid();        
+                nav_img();
+                });
+            };
+        </script>
     </footer>
 </body>
 
