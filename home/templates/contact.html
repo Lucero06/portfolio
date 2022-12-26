@@ -40,11 +40,11 @@
      <p>
         {% comment %} <i class="fa-solid fa-mobile-screen"></i> {{number}} {% endcomment %}
     </p> 
-    <p><i class="fa-regular fa-envelope"></i> {{mail}}</p></span>
+    <p> <a href="mailto:{{mail}}" target="_blank"> <i class="fa-regular fa-envelope"></i> {{mail}} </a></p></span>
     <span></span>
 </div>
 
-<center>
+ {% comment %} <center>
     <h3 class=""> Envía un correo </h3>
 </center>
 <div class="">
@@ -57,7 +57,7 @@
             </div>        
         </center>
     </form>
-</div>
+</div>  {% endcomment %}
 
 
 {% endblock %}

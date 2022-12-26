@@ -395,7 +395,8 @@ form .required:before {
 .info {
   display: grid;
   justify-items: center;
-  grid-template-columns: 1fr 1fr 1fr; }
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 52vh; }
 
 #icv {
   display: block;
